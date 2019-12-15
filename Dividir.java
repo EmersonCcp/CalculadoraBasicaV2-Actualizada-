@@ -11,7 +11,12 @@ public class Dividir extends Operaciones {
         for (int i = 0; i < getC_numeros(); i++) {
             System.out.print("" + (i + 1) + ". Ingrese un numero: ");
             Vec[i] = in.nextInt();
-            acu = acu / Vec[i];
+            if(acu==1){
+              acu =  Vec[i]/acu;  
+            }else{
+                acu=acu/Vec[i];
+            }
+            
         }
         System.out.println("El resultado de la resta es: " + acu);
         System.out.println("-------------------------------------------");

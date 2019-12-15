@@ -13,11 +13,11 @@ public class Restar extends Operaciones {
             Vec[i] = in.nextInt();
             if(acu==0){
                 acu = Vec[i] - acu;
-            System.out.println(acu);
+            
             }else{
                 sw=1;
                 acu=acu-Vec[i];
-                System.out.println(acu);
+                
             }
             
                     
